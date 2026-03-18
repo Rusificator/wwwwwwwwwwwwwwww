@@ -1,4 +1,4 @@
-
+/* style.css */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -32,7 +32,6 @@ h2 {
 }
 
 .task {
-      max-width: 100%;
     margin-bottom: 40px;
     padding: 20px;
     background-color: #fcfcfc;
@@ -68,7 +67,7 @@ h2 {
     text-align: center;
 }
 
-img {
+.screenshot img {
     max-width: 100%;
     height: auto;
     border: 1px solid #ddd;
@@ -92,9 +91,8 @@ code {
     color: #c0392b;
 }
 
-/* Стили для подразделов внутри task  */
+/* Стили для подразделов внутри task (аналогично subtask из лабы2) */
 .subtask {
-    max-width: 100%;
     margin-top: 30px;
     padding-left: 15px;
     border-left: 2px solid #ddd;

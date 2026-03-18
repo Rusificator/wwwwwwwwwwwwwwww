@@ -185,15 +185,15 @@ if (empty($languages_from_db)) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 3 - Анкета</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="container">
+    <div class="container">
         <h1>Анкета</h1>
 
-          <!-- Блок сообщений об успехе/ошибках -->
+        <!-- Блок сообщений об успехе/ошибках -->
         <?php if ($success_message): ?>
             <div class="success"><?= htmlspecialchars($success_message) ?></div>
         <?php endif; ?>
@@ -271,10 +271,11 @@ if (empty($languages_from_db)) {
                 <button type="submit">Сохранить</button>
             </div>
         </form>
-    </div>
 
-        <!-- ========== Подготовительный раздел ========== -->
-        <div class="container">
+        <!-- ===== ЭТАПЫ ВЫПОЛНЕНИЯ ЗАДАНИЯ (оформление как в лабе 2) ===== -->
+
+        <!-- Раздел 1: Подготовка к выполнению работы -->
+        <section class="task">
             <h2>Подготовка к выполнению работы</h2>
 
             <!-- 0.PNG – инициализация Git -->
@@ -296,7 +297,7 @@ if (empty($languages_from_db)) {
                     <p>Через SSH выполнен вход на сервер <code>192.168.199.8</code> под логином <code>u82457</code>.</p>
                 </div>
                 <div class="screenshot">
-                    <img src="1.PNG" alt="SSH подключение" width=100%>
+                    <img src="1.PNG" alt="SSH подключение">
                     <p class="caption">Скриншот 1: Подключение к серверу</p>
                 </div>
             </div>
@@ -332,7 +333,7 @@ if (empty($languages_from_db)) {
                     <p>Созданы три таблицы: <code>application</code>, <code>language</code>, <code>application_language</code> – в соответствии с 3-й нормальной формой. Затем таблица <code>language</code> заполнена списком языков из задания.</p>
                 </div>
                 <div class="screenshot">
-                    <img src="5.PNG" alt="SQL запросы" width=100% >
+                    <img src="5.PNG" alt="SQL запросы">
                     <p class="caption">Скриншот 5: Создание таблиц и вставка языков</p>
                 </div>
             </div>
@@ -353,22 +354,16 @@ if (empty($languages_from_db)) {
             <div class="subtask">
                 <h3>Корректировка структуры и проверка сохранённых данных</h3>
                 <div class="description">
-                    <p>Выполнена выборка последних записей из таблицы <code>application</code> для проверки успешного сохранения данных.</p>
+                    <p>Поле <code>gender</code> изменено (удалён вариант <code>'other'</code>). Затем выполнена выборка последних записей из таблицы <code>application</code> для проверки успешного сохранения данных. Для удобного просмотра всех сохранённых анкет создана отдельная страница: <a href="view.php" target="_blank">Просмотр сохранённых записей</a>.</p>
                 </div>
                 <div class="screenshot">
                     <img src="7.PNG" alt="ALTER и SELECT">
                     <p class="caption">Скриншот 7: Изменение структуры и просмотр записей</p>
                 </div>
-                <div class="description">
-                    <p>Для удобного просмотра всех сохранённых анкет создана отдельная страница: <a href="view.php" target="_blank">Просмотр сохранённых записей</a>.</p>
-                </div>
-
             </div>
-        </div>
+        </section>
 
-
-
-
-    
+       
+    </div>
 </body>
 </html>
