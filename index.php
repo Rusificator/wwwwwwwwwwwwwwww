@@ -296,7 +296,7 @@ if (empty($languages_from_db)) {
                     <p>Через SSH выполнен вход на сервер <code>192.168.199.8</code> под логином <code>u82457</code>.</p>
                 </div>
                 <div class="screenshot">
-                    <img src="1.PNG" alt="SSH подключение">
+                    <img src="1.PNG" alt="SSH подключение" width=100%>
                     <p class="caption">Скриншот 1: Подключение к серверу</p>
                 </div>
             </div>
@@ -332,7 +332,7 @@ if (empty($languages_from_db)) {
                     <p>Созданы три таблицы: <code>application</code>, <code>language</code>, <code>application_language</code> – в соответствии с 3-й нормальной формой. Затем таблица <code>language</code> заполнена списком языков из задания.</p>
                 </div>
                 <div class="screenshot">
-                    <img src="5.PNG" alt="SQL запросы">
+                    <img src="5.PNG" alt="SQL запросы" width=100% >
                     <p class="caption">Скриншот 5: Создание таблиц и вставка языков</p>
                 </div>
             </div>
