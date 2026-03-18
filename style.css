@@ -32,6 +32,7 @@ h2 {
 }
 
 .task {
+      max-width: 100%;
     margin-bottom: 40px;
     padding: 20px;
     background-color: #fcfcfc;
@@ -91,8 +92,9 @@ code {
     color: #c0392b;
 }
 
-/* Стили для подразделов внутри task (аналогично subtask из лабы2) */
+/* Стили для подразделов внутри task  */
 .subtask {
+    max-width: 100%;
     margin-top: 30px;
     padding-left: 15px;
     border-left: 2px solid #ddd;
