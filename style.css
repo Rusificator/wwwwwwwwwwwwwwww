@@ -31,80 +31,7 @@ h2 {
     padding-left: 15px;
 }
 
-.task {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #fcfcfc;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-}
-
-.command {
-    background-color: #f0f0f0;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-family: 'Courier New', monospace;
-    margin-bottom: 15px;
-    border-left: 4px solid #77f700;
-}
-
-.description {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-.description p {
-    margin: 5px 0;
-}
-
-.description ul {
-    margin: 5px 0 0 20px;
-}
-
-.screenshot {
-    text-align: center;
-}
-
-.screenshot_img {
-    max-width: auto;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.caption {
-    font-style: italic;
-    color: #7f8c8d;
-    margin-top: 8px;
-    font-size: 0.9em;
-}
-
-code {
-    background-color: #e7f3ff;
-    padding: 2px 5px;
-    border-radius: 3px;
-    font-family: 'Courier New', monospace;
-    color: #c0392b;
-}
-
-/* Стили для подразделов внутри task () */
-.subtask {
-    margin-top: 30px;
-    padding-left: 15px;
-    border-left: 2px solid #ddd;
-}
-
-.subtask h3 {
-    color: #2c3e50;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-/* Стили для формы (добавляем, чтобы форма не выбивалась из общего стиля) */
+/* Стили для формы */
 .form-group {
     margin-bottom: 20px;
 }
@@ -164,6 +91,7 @@ code {
     background-color: #2ecc71;
 }
 
+/* Сообщения об ошибках и успехе */
 .errors, .field-error {
     color: #e74c3c;
     font-size: 14px;
@@ -186,4 +114,88 @@ code {
 
 .field-error {
     display: block;
+}
+
+/* Стили для блоков заданий (как в предыдущих лабораторных) */
+.task {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.command {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    margin-bottom: 15px;
+    border-left: 4px solid #77f700;
+}
+
+.description {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.description p {
+    margin: 5px 0;
+}
+
+.description ul {
+    margin: 5px 0 0 20px;
+}
+
+.screenshot {
+    text-align: center;
+}
+
+.screenshot img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.caption {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 8px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #e7f3ff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    color: #c0392b;
+}
+
+/* Стили для подсекций внутри task (для скриншотов этапов) */
+.subtask {
+    margin-top: 30px;
+    padding-left: 15px;
+    border-left: 2px solid #ddd;
+}
+
+.subtask h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Дополнительно для ссылки на view.php */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

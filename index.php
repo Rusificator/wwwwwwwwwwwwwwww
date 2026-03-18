@@ -278,31 +278,19 @@ if (empty($languages_from_db)) {
         <section class="task">
             <h2>Подготовка к выполнению работы</h2>
 
-            <!-- 0.PNG – инициализация Git -->
-            <div class="subtask">
-                <h3>Инициализация Git и отправка на GitHub</h3>
-                <div class="description">
-                    <p>На локальном компьютере создан репозиторий, добавлены файлы (скриншоты, index.php, style.css, bd.txt, err.txt) и выполнена отправка на GitHub.</p>
-                </div>
-                <div class="screenshot">
-                    <img src="0.PNG" alt="Git init и push">
-                    <p class="caption">Скриншот 0: Инициализация Git и push</p>
-                </div>
-            </div>
-
-            <!-- 1.PNG – подключение по SSH -->
+            <!-- 1. Подключение к серверу -->
             <div class="subtask">
                 <h3>Подключение к учебному серверу</h3>
                 <div class="description">
                     <p>Через SSH выполнен вход на сервер <code>192.168.199.8</code> под логином <code>u82457</code>.</p>
                 </div>
-                <div class="screenshot_img">
+                <div class="screenshot">
                     <img src="1.PNG" alt="SSH подключение">
                     <p class="caption">Скриншот 1: Подключение к серверу</p>
                 </div>
             </div>
 
-            <!-- 2.PNG – создание каталога hw3 -->
+            <!-- 2. Создание рабочего каталога -->
             <div class="subtask">
                 <h3>Создание рабочего каталога</h3>
                 <div class="description">
@@ -314,7 +302,7 @@ if (empty($languages_from_db)) {
                 </div>
             </div>
 
-            <!-- 4.PNG – вход в MySQL -->
+            <!-- 3. Подключение к MySQL -->
             <div class="subtask">
                 <h3>Подключение к MySQL</h3>
                 <div class="description">
@@ -326,7 +314,7 @@ if (empty($languages_from_db)) {
                 </div>
             </div>
 
-            <!-- 5.PNG – создание таблиц и наполнение -->
+            <!-- 4. Создание таблиц и заполнение языков -->
             <div class="subtask">
                 <h3>Создание таблиц и заполнение языков</h3>
                 <div class="description">
@@ -338,7 +326,19 @@ if (empty($languages_from_db)) {
                 </div>
             </div>
 
-            <!-- 6.PNG – выход из MySQL -->
+            <!-- 5. Корректировка структуры и просмотр данных -->
+            <div class="subtask">
+                <h3>Корректировка структуры и проверка сохранённых данных</h3>
+                <div class="description">
+                    <p>Поле <code>gender</code> изменено (удалён вариант <code>'other'</code>). Затем выполнена выборка последних записей из таблицы <code>application</code> для проверки успешного сохранения данных. Для удобного просмотра всех сохранённых анкет создана отдельная страница: <a href="view.php" target="_blank">Просмотр сохранённых записей</a>.</p>
+                </div>
+                <div class="screenshot">
+                    <img src="7.PNG" alt="ALTER и SELECT">
+                    <p class="caption">Скриншот 7: Изменение структуры и просмотр записей</p>
+                </div>
+            </div>
+
+            <!-- 6. Выход из MySQL -->
             <div class="subtask">
                 <h3>Выход из MySQL</h3>
                 <div class="description">
@@ -350,20 +350,47 @@ if (empty($languages_from_db)) {
                 </div>
             </div>
 
-            <!-- 7.PNG – изменение поля gender и просмотр данных -->
+            <!-- 7. Инициализация Git и отправка на GitHub -->
             <div class="subtask">
-                <h3>Корректировка структуры и проверка сохранённых данных</h3>
+                <h3>Инициализация Git и отправка на GitHub</h3>
                 <div class="description">
-                    <p>Затем выполнена выборка последних записей из таблицы <code>application</code> для проверки успешного сохранения данных. Для удобного просмотра всех сохранённых анкет создана отдельная страница: <a href="view.php" target="_blank">Просмотр сохранённых записей</a>.</p>
+                    <p>На локальном компьютере создан репозиторий, добавлены файлы (скриншоты, index.php, style.css и др.) и выполнена отправка на GitHub.</p>
                 </div>
                 <div class="screenshot">
-                    <img src="7.PNG" alt="ALTER и SELECT">
-                    <p class="caption">Скриншот 7: Изменение структуры и просмотр записей</p>
+                    <img src="0.PNG" alt="Git init и push">
+                    <p class="caption">Скриншот 0: Инициализация Git и push</p>
                 </div>
             </div>
         </section>
 
-       
+        <!-- Раздел 2: Обновление репозитория и сервера после выполнения -->
+        <section class="task">
+            <h2>Обновление репозитория и сервера после выполнения</h2>
+
+            <div class="subtask">
+                <h3>Добавление новых скриншотов в Git (локально)</h3>
+                <div class="description">
+                    <p>После выполнения всех этапов дополнительные скриншоты (f1.png, f2.png и др.) были добавлены в локальный репозиторий, закоммичены и отправлены на GitHub.</p>
+                </div>
+                <div class="screenshot">
+                    <img src="f1.png" alt="git add, commit, push">
+                    <p class="caption">Скриншот f1: Добавление новых файлов и push</p>
+                </div>
+            </div>
+
+            <div class="subtask">
+                <h3>Обновление файлов на сервере</h3>
+                <div class="description">
+                    <p>На сервере выполнен <code>git pull</code> в папке с репозиторием. После получения обновлений файлы скопированы в каталог <code>~/www/hw3</code>.</p>
+                </div>
+                <div class="screenshot">
+                    <img src="f2.png" alt="git pull и копирование">
+                    <p class="caption">Скриншот f2: Обновление на сервере</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Дополнительно: ссылка на страницу просмотра записей (уже есть выше) -->
     </div>
 </body>
 </html>
