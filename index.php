@@ -193,7 +193,7 @@ if (empty($languages_from_db)) {
 
 
         <!-- ========== Подготовительный раздел ========== -->
-        <section class="preparation">
+        <div class="container">
             <h2>Подготовка к выполнению работы</h2>
 
             <!-- 0.PNG – инициализация Git -->
@@ -283,7 +283,7 @@ if (empty($languages_from_db)) {
                 </div>
 
             </div>
-        </section>
+        </div>
 
 
 
